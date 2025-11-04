@@ -6,6 +6,7 @@ import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import CVSection from "@/components/CVSection";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 const Index = () => {
   return (
@@ -18,6 +19,7 @@ const Index = () => {
       <Contact />
       <CVSection />
       <Footer />
+      <Chatbot />
     </main>
   );
 };
