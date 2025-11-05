@@ -10,7 +10,7 @@ const Projects = () => {
       description: "Successfully launched and manage my own clothing brand, handling design, marketing, and customer relations.",
       tools: "E-commerce, Social Media Marketing, Brand Management",
       outcome: "Active business with growing customer base.",
-      link: "#" // User should add their actual clothing brand link
+      link: "https://beezmark-dee-boison.netlify.app/"
     },
     {
       icon: Zap,
