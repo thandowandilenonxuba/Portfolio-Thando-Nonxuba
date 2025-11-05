@@ -6,8 +6,8 @@ const Projects = () => {
   const projects = [
     {
       icon: Shirt,
-      title: "Clothing Brand",
-      description: "Successfully launched and manage my own clothing brand, handling design, marketing, and customer relations.",
+      title: "Beezmark dee Boison",
+      description: "Clothing Brand - Successfully launched and manage my own clothing brand, handling design, marketing, and customer relations.",
       tools: "E-commerce, Social Media Marketing, Brand Management",
       outcome: "Active business with growing customer base.",
       link: "https://beezmark-dee-boison.netlify.app/"
