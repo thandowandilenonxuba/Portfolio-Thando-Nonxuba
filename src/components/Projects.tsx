@@ -7,9 +7,9 @@ const Projects = () => {
     {
       icon: Shirt,
       title: "Beezmark dee Boison",
-      description: "Clothing Brand - Successfully launched and manage my own clothing brand, handling design, marketing, and customer relations.",
+      description: "Clothing Brand - Successfully launched and manage my own clothing brand since 2018, having collaborated with well-known personalities in South Africa. Handle design, marketing, and customer relations.",
       tools: "E-commerce, Social Media Marketing, Brand Management",
-      outcome: "Active business with growing customer base.",
+      outcome: "Active business with growing customer base and celebrity collaborations.",
       link: "https://beezmark-dee-boison.netlify.app/"
     },
     {

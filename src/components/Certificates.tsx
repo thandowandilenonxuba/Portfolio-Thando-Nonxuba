@@ -7,7 +7,7 @@ const Certificates = () => {
     { name: "Wildland Firefighter I (IFSAC Accredited)", institution: "Epping Training Centre", type: "certification" },
     { name: "NFPA 1051 Wildland Firefighter I", institution: "Fire and Rescue Service Training Academy", type: "certification" },
     { name: "BPO Skills Academy", institution: "4IR Future Skills, Financial Services Compliance, Long Term Insurance, Class of Business", type: "certification" },
-    { name: "National Diploma in Information Technology", institution: "Walter Sisulu University", type: "degree" },
+    { name: "National Diploma in Information Technology - Software Development", institution: "Walter Sisulu University", type: "degree" },
     { name: "Matric", institution: "Gobe Commercial High School", type: "degree" },
   ];
 

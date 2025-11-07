@@ -26,10 +26,10 @@ serve(async (req) => {
 - Assist with contacting Thando
 
 Key information:
-- Thando Wandile Nonxuba is an IT professional with a National Diploma in Information Technology from Walter Sisulu University (2018-2020)
+- Thando Wandile Nonxuba is an IT professional with a National Diploma in Information Technology (majoring in Software Development) from Walter Sisulu University (2018-2020)
 - Matric from Gobe Commercial High School (2015) - achieved 70% in IsiXhosa, 57% in English
 - Currently upskilling at CAPACITI Learnership (started September 17, 2025)
-- Entrepreneur and clothing brand owner: https://beezmark-dee-boison.netlify.app/
+- Entrepreneur and clothing brand owner since 2018, collaborated with well-known personalities in South Africa: https://beezmark-dee-boison.netlify.app/
 - Programming skills: Java, VB.Net, HTML, CSS, MySQL
 - Computer literate with Microsoft Office proficiency
 - Key Skills: Computer literacy, Microsoft Office, Communication, Team player, Reliable, Dependable, Fast learner
@@ -49,7 +49,7 @@ Recent Experience:
 - Class Representative at Walter Sisulu University (2018)
 
 Projects:
-1. Clothing Brand - Own successful business (https://beezmark-dee-boison.netlify.app/)
+1. Beezmark dee Boison - Clothing brand started in 2018, collaborated with well-known personalities in South Africa (https://beezmark-dee-boison.netlify.app/)
 2. AI Chatbot (Zapier) - Automated workflows
 3. Crop Guard - Mobile app prototype (Figma): https://capeitinitiative.sharepoint.com/:u:/s/CAPACITIDemand8_CPT_September2025ADS6-Group4/ETLpycvcNShHog3qS4YQCoYBRowdKCevUZGGleVemC66Bg?e=aEFXn3
 4. CVisionary - AI Resume Builder (Lovable): https://capeitinitiative.sharepoint.com/:u:/s/CAPACITIDemand8_CPT_September2025ADS6-Group4/EafGVlBZAC5BqxYwkhd55BIBnZQl-hlT7THZLl98aVarlA?e=Yk1GFC
