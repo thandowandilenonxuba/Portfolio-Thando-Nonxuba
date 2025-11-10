@@ -7,11 +7,22 @@ const CVSection = () => {
   const cvPath = "/cv/thando-nonxuba-cv.pdf";
   
   const handleDownload = () => {
-    window.open(cvPath, '_blank');
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.download = 'Thando-Nonxuba-CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   const handleView = () => {
-    window.open(cvPath, '_blank');
+    const link = document.createElement('a');
+    link.href = cvPath;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
