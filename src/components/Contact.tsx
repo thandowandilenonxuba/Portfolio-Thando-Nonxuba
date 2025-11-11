@@ -27,9 +27,13 @@ const Contact = () => {
       // Validate form data
       const validatedData = contactSchema.parse(formData);
       
-      // Here you would typically send the data to a backend
-      // For now, we'll just show a success message
-      console.log("Form submitted:", validatedData);
+      // Send email via edge function
+      const { supabase } = await import("@/integrations/supabase/client");
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: validatedData
+      });
+      
+      if (error) throw error;
       
       toast.success("Message sent successfully! I'll get back to you soon.");
       setFormData({ name: "", email: "", message: "" });
@@ -38,6 +42,7 @@ const Contact = () => {
         const firstError = error.errors[0];
         toast.error(firstError.message);
       } else {
+        console.error("Error sending message:", error);
         toast.error("Failed to send message. Please try again.");
       }
     } finally {
