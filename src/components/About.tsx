@@ -1,9 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { User, Calendar, Globe, Languages, Car, Shield } from "lucide-react";
+import { User, Calendar, Globe, Languages, Car, Shield, MapPin } from "lucide-react";
 
 const About = () => {
   const personalDetails = [
     { icon: Calendar, label: "Date of Birth", value: "22 November 1997" },
+    { icon: MapPin, label: "Physical Address", value: "Langa, Cape Town 7455" },
     { icon: Globe, label: "Nationality", value: "South African" },
     { icon: User, label: "Gender", value: "Male" },
     { icon: Car, label: "Driving Licence", value: "Code 10 (C1) with Professional Driving Permit" },

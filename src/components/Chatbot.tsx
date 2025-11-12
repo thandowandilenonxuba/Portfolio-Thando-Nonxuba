@@ -55,9 +55,27 @@ const Chatbot = () => {
         return;
       }
 
+      let responseContent = data.choices[0].message.content;
+      
+      // Check for navigation commands in the response
+      const navMatch = responseContent.match(/\[NAVIGATE:(\w+)\]/);
+      if (navMatch) {
+        const sectionId = navMatch[1];
+        // Remove the navigation command from the displayed message
+        responseContent = responseContent.replace(/\[NAVIGATE:\w+\]\s*/, '');
+        
+        // Navigate to the section
+        setTimeout(() => {
+          const element = document.getElementById(sectionId);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 500);
+      }
+
       const assistantMessage: Message = {
         role: "assistant",
-        content: data.choices[0].message.content,
+        content: responseContent,
       };
       setMessages((prev) => [...prev, assistantMessage]);
     } catch (error) {
