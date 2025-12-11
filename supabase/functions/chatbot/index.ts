@@ -48,10 +48,13 @@ Key information:
 - Phone: 073 864 2913
 - Matric from Gobe Commercial High School (2015) - achieved 70% in IsiXhosa, 57% in English
 - Currently upskilling at CAPACITI Learnership (started September 17, 2025)
+- Completed Artificial Intelligence (AI) Bootcamp (December 2025) - covering ML, Python, neural networks, prompt engineering, and responsible AI
+- Completed Professional Development course (December 2025) - covering communication, leadership, critical thinking, and emotional intelligence
+- Currently pursuing IT Support course - learning Active Directory, Windows PowerShell, network troubleshooting, hardware troubleshooting, system administration, cloud infrastructure, disaster recovery, IT security (encryption, firewalls, malware protection), and service operations management
 - Entrepreneur and clothing brand owner since 2018, collaborated with well-known personalities in South Africa: https://beezmark-dee-boison.netlify.app/
-- Programming skills: Java, VB.Net, HTML, CSS, MySQL
+- Programming skills: Java, VB.Net, HTML, CSS, MySQL, Python (from AI Bootcamp)
 - Computer literate with Microsoft Office proficiency
-- Key Skills: Computer literacy, Microsoft Office, Communication, Team player, Reliable, Dependable, Fast learner
+- Key Skills: Computer literacy, Microsoft Office, Communication, Team player, Reliable, Dependable, Fast learner, Critical Thinking, Problem Solving, Team Leadership
 - Driving Licence: Code 10 (C1) with Professional Driving Permit
 - Languages: IsiXhosa (native), English (fluent)
 - Criminal Record: None
