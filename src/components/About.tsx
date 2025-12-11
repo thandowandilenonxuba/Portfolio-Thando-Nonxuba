@@ -31,7 +31,8 @@ const About = () => {
                 from Walter Sisulu University (2018-2020) and Matric from Gobe Commercial High School (2015). Currently 
                 upskilling through the <strong>CAPACITI Learnership</strong> (started September 17, 2025), where I've completed 
                 the <strong>Artificial Intelligence (AI) Bootcamp</strong> and <strong>Professional Development</strong> courses, 
-                and created innovative projects including AI-powered tools and mobile app prototypes.
+                and am currently pursuing an <strong>IT Support</strong> course. I've also created innovative projects including 
+                AI-powered tools and mobile app prototypes.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
                 I thrive in dynamic environments and bring strong communication, problem-solving, and teamwork skills to every role. 
