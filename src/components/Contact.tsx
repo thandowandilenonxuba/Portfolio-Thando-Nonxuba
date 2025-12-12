@@ -53,7 +53,7 @@ const Contact = () => {
   const contactInfo = [
     { icon: Mail, label: "Email", value: "thandowandilenonxuba@gmail.com", href: "mailto:thandowandilenonxuba@gmail.com" },
     { icon: Phone, label: "Phone", value: "073 864 2913", href: "tel:+27738642913" },
-    { icon: MapPin, label: "Address", value: "4492 Umnga Crescent, Langa, Cape Town, 7455", href: null },
+    { icon: MapPin, label: "Address", value: "Langa, Cape Town, 7455", href: null },
   ];
 
   const downloadVCard = () => {
@@ -63,7 +63,7 @@ FN:Thando Wandile Nonxuba
 N:Nonxuba;Thando;Wandile;;
 EMAIL;TYPE=INTERNET:thandowandilenonxuba@gmail.com
 TEL;TYPE=CELL:+27738642913
-ADR;TYPE=HOME:;;4492 Umnga Crescent;Langa;Cape Town;7455;South Africa
+ADR;TYPE=HOME:;;Langa;Cape Town;7455;South Africa
 BDAY:1997-11-22
 END:VCARD`;
 
