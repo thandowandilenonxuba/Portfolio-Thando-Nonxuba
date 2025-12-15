@@ -48,7 +48,7 @@ const Hero = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              IT Professional | Entrepreneur | CAPACITI Learner
+              IT Professional | Entrepreneur | CAPACITI Champion
             </p>
           </div>
 

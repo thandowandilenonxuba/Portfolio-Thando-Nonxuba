@@ -47,7 +47,7 @@ Key information:
 - Email: thandowandilenonxuba@gmail.com
 - Phone: 073 864 2913
 - Matric from Gobe Commercial High School (2015) - achieved 70% in IsiXhosa, 57% in English
-- Currently upskilling at CAPACITI Learnership (started September 17, 2025)
+- Currently upskilling as a CAPACITI Champion (started September 17, 2025)
 - Completed Artificial Intelligence (AI) Bootcamp (December 2025) - covering ML, Python, neural networks, prompt engineering, and responsible AI
 - Completed Professional Development course (December 2025) - covering communication, leadership, critical thinking, and emotional intelligence
 - Currently pursuing IT Support course - learning Active Directory, Windows PowerShell, network troubleshooting, hardware troubleshooting, system administration, cloud infrastructure, disaster recovery, IT security (encryption, firewalls, malware protection), and service operations management
@@ -63,7 +63,7 @@ Key information:
 - Contact options: Direct contact form on the website, email, phone, and downloadable vCard (.vcf) with all contact information
 
 Current Work:
-- CAPACITI Learnership - IT Skills Development (Sept 2025 - Present)
+- CAPACITI Champion - IT Skills Development (Sept 2025 - Present)
   * Created AI Chatbot using Zapier
   * Designed Crop Guard mobile app prototype with Figma
   * Built CVisionary AI Resume Builder using Lovable

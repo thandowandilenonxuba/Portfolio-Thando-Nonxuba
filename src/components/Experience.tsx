@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Briefcase } from "lucide-react";
+import USBUnderline from "./USBUnderline";
 
 const Experience = () => {
   const experiences = [
     { 
       year: "Sept 2025 - Present", 
-      role: "CAPACITI Learnership - IT Skills Development", 
+      role: "CAPACITI Champion - IT Skills Development", 
       company: "CAPACITI",
       description: "Upskilling in tech with hands-on projects including Chatbot (Zapier), Crop Guard Prototype (Figma), CVisionary AI Resume Builder, and TriGen Content Generator (Lovable)."
     },
@@ -80,7 +81,7 @@ const Experience = () => {
               Experience
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+          <USBUnderline />
 
           <div className="relative">
             {/* Timeline Line */}

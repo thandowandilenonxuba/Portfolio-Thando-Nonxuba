@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Code, Lightbulb } from "lucide-react";
+import USBUnderline from "./USBUnderline";
 
 const Skills = () => {
   const programmingLanguages = [
@@ -29,7 +30,7 @@ const Skills = () => {
               Skills
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+          <USBUnderline />
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Programming Languages */}
