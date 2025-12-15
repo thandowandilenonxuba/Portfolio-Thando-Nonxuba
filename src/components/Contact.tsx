@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin, Download } from "lucide-react";
+import USBUnderline from "./USBUnderline";
 import { useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -88,7 +89,7 @@ END:VCARD`;
               Get In Touch
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+          <USBUnderline />
 
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
