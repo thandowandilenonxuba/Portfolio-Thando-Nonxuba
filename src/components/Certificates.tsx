@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Award, GraduationCap } from "lucide-react";
+import USBUnderline from "./USBUnderline";
 
 const Certificates = () => {
   const certificates = [
@@ -23,7 +24,7 @@ const Certificates = () => {
               Certificates & Qualifications
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+          <USBUnderline />
 
           <div className="grid md:grid-cols-2 gap-6">
             {certificates.map((cert, index) => {
