@@ -61,10 +61,10 @@ const Contact = () => {
 VERSION:3.0
 FN:Thando Wandile Nonxuba
 N:Nonxuba;Thando;Wandile;;
+TITLE:IT Support Associate
 EMAIL;TYPE=INTERNET:thandowandilenonxuba@gmail.com
 TEL;TYPE=CELL:+27738642913
 ADR;TYPE=HOME:;;Langa;Cape Town;7455;South Africa
-BDAY:1997-11-22
 END:VCARD`;
 
     const blob = new Blob([vCard], { type: 'text/vcard;charset=utf-8' });
