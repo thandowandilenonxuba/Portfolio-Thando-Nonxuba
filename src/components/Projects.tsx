@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Shirt, Zap, Figma, FileText, Sparkles, ExternalLink } from "lucide-react";
+import USBUnderline from "./USBUnderline";
 
 const Projects = () => {
   const projects = [
@@ -61,7 +62,7 @@ const Projects = () => {
               Projects
             </span>
           </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-12"></div>
+          <USBUnderline />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => {
