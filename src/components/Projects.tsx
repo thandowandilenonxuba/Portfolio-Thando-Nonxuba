@@ -1,62 +1,55 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code, Shirt, Zap, Figma, FileText, Sparkles, ExternalLink } from "lucide-react";
+import { Code, Shirt, Sparkles, FileText, ExternalLink } from "lucide-react";
 import USBUnderline from "./USBUnderline";
 
 const Projects = () => {
-  const projects = [
+  const featuredProjects = [
     {
       icon: Shirt,
       title: "Beezmark dee Boison",
-      description: "Clothing Brand - Successfully launched and manage my own clothing brand since 2018, having collaborated with well-known personalities in South Africa. Handle design, marketing, and customer relations.",
-      tools: "E-commerce, Social Media Marketing, Brand Management",
-      outcome: "Active business with growing customer base and celebrity collaborations.",
+      problem: "Limited access to unique, locally-designed streetwear in South Africa.",
+      solution: "Launched an independent clothing brand with bold designs and celebrity collaborations.",
+      result: "Active business since 2018 with growing customer base and SA influencer partnerships.",
       link: "https://beezmark-dee-boison.netlify.app/"
     },
     {
-      icon: Zap,
-      title: "AI Chatbot with Zapier",
-      description: "Created an intelligent chatbot using Zapier automation tools during CAPACITI learnership to streamline customer interactions.",
-      tools: "Zapier, AI Integration, Workflow Automation",
-      outcome: "Automated customer service workflows efficiently."
-    },
-    {
-      icon: Figma,
-      title: "Crop Guard - Mobile App Prototype",
-      description: "Designed a comprehensive mobile application prototype for agricultural crop monitoring and protection.",
-      tools: "Figma, UI/UX Design, Prototyping",
-      outcome: "Professional prototype for agricultural technology solution.",
-      link: "https://capeitinitiative.sharepoint.com/:u:/s/CAPACITIDemand8_CPT_September2025ADS6-Group4/ETLpycvcNShHog3qS4YQCoYBRowdKCevUZGGleVemC66Bg?e=aEFXn3"
-    },
-    {
       icon: FileText,
-      title: "CVisionary - AI Resume Builder",
-      description: "Developed an AI-powered resume generator using Lovable that creates professional CVs tailored to job requirements.",
-      tools: "Lovable, AI Integration, React, TypeScript",
-      outcome: "Intelligent tool for automated resume creation.",
+      title: "CVisionary",
+      problem: "Job seekers struggle to create tailored, professional resumes quickly.",
+      solution: "Built an AI-powered resume builder that generates customized CVs based on job requirements.",
+      result: "Functional tool that produces polished resumes in minutes, not hours.",
       link: "https://cvisionary.netlify.app/"
     },
     {
       icon: Sparkles,
-      title: "TriGen - AI Content Generator",
-      description: "Built a powerful content generation tool using Lovable that creates engaging marketing copy and social media content.",
-      tools: "Lovable, AI Models, Content Strategy",
-      outcome: "Automated content creation for multiple platforms.",
+      title: "TriGen",
+      problem: "Creating consistent, engaging content across platforms is time-consuming.",
+      solution: "Developed an AI content generator for marketing copy and social media posts.",
+      result: "Automated content creation that maintains brand voice across multiple channels.",
       link: "https://trigen.netlify.app/"
     },
+  ];
+
+  const otherProjects = [
     {
-      icon: Code,
-      title: "IT Portfolio Website",
-      description: "Designed and built this modern, responsive portfolio website to showcase qualifications, experience, and projects.",
-      tools: "React, TypeScript, Tailwind CSS, Lovable",
-      outcome: "Professional online presence with integrated chatbot."
-    }
+      title: "AI Chatbot with Zapier",
+      description: "Automated customer service workflows using Zapier integrations."
+    },
+    {
+      title: "Crop Guard Prototype",
+      description: "Mobile app design for agricultural crop monitoring (Figma)."
+    },
+    {
+      title: "Portfolio Website",
+      description: "This site – built with React, TypeScript, and Tailwind CSS."
+    },
   ];
 
   return (
     <section id="projects" className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Projects
@@ -64,37 +57,40 @@ const Projects = () => {
           </h2>
           <USBUnderline />
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => {
+          {/* Featured Projects */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            {featuredProjects.map((project, index) => {
               const Icon = project.icon;
               return (
                 <Card 
                   key={index} 
                   className="border-0 shadow-md hover:shadow-professional transition-all duration-300 hover:-translate-y-1 flex flex-col"
                 >
-                  <CardHeader>
-                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4">
-                      <Icon className="h-8 w-8 text-white" />
+                  <CardHeader className="pb-3">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-3">
+                      <Icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className="text-xl">{project.title}</CardTitle>
+                    <CardTitle className="text-lg">{project.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4 flex-1 flex flex-col">
-                    <p className="text-foreground/80 leading-relaxed">
-                      {project.description}
-                    </p>
+                  <CardContent className="space-y-3 flex-1 flex flex-col text-sm">
                     <div>
-                      <p className="text-sm font-semibold text-primary mb-1">Tools Used:</p>
-                      <p className="text-sm text-muted-foreground">{project.tools}</p>
+                      <p className="font-semibold text-primary mb-1">Problem</p>
+                      <p className="text-foreground/80">{project.problem}</p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-primary mb-1">Solution</p>
+                      <p className="text-foreground/80">{project.solution}</p>
                     </div>
                     <div className="flex-1">
-                      <p className="text-sm font-semibold text-primary mb-1">Outcome:</p>
-                      <p className="text-sm text-muted-foreground">{project.outcome}</p>
+                      <p className="font-semibold text-primary mb-1">Result</p>
+                      <p className="text-foreground/80">{project.result}</p>
                     </div>
                     {project.link && (
                       <Button
                         asChild
                         variant="outline"
-                        className="w-full mt-4"
+                        size="sm"
+                        className="w-full mt-3"
                       >
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
                           View Project <ExternalLink className="ml-2 h-4 w-4" />
@@ -105,6 +101,19 @@ const Projects = () => {
                 </Card>
               );
             })}
+          </div>
+
+          {/* Other Projects */}
+          <div className="bg-muted/30 rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-foreground mb-4">Other Work</h3>
+            <div className="grid sm:grid-cols-3 gap-4">
+              {otherProjects.map((project, index) => (
+                <div key={index} className="bg-background rounded-lg p-4">
+                  <p className="font-medium text-foreground mb-1">{project.title}</p>
+                  <p className="text-sm text-muted-foreground">{project.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
