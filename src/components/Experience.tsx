@@ -4,48 +4,12 @@ import USBUnderline from "./USBUnderline";
 
 const Experience = () => {
   const experiences = [
-    { 
-      year: "Sept 2025 - Present", 
-      role: "CAPACITI Champion", 
-      company: "CAPACITI",
-      impact: "Building AI-powered tools and prototypes while upskilling in IT support and cloud technologies.",
-      icon: GraduationCap
-    },
-    { 
-      year: "2024 - 2025", 
-      role: "Customer Service Agent", 
-      company: "Shoprite Checkers Sixty60",
-      impact: "Resolved customer issues efficiently, maintaining high satisfaction scores under pressure.",
-      icon: Headphones
-    },
-    { 
-      year: "2024 & 2025", 
-      role: "Wildland Firefighter", 
-      company: "Seasonal Contract",
-      impact: "Led emergency response operations protecting communities during peak wildfire seasons.",
-      icon: Flame
-    },
-    { 
-      year: "2023", 
-      role: "Call Centre Agent", 
-      company: "Ver-tex Solutions",
-      impact: "Completed learnership with focus on professional communication and problem resolution.",
-      icon: Headphones
-    },
-    { 
-      year: "2021 - 2022", 
-      role: "Educator & Admin", 
-      company: "Godidi S.P.S",
-      impact: "Supported teaching operations and managed administrative tasks across multiple roles.",
-      icon: Users
-    },
-    { 
-      year: "2018", 
-      role: "Class Representative", 
-      company: "Walter Sisulu University",
-      impact: "Advocated for student needs and facilitated faculty-student communication.",
-      icon: PenTool
-    },
+    { year: "Sept 2025 - Present", role: "CAPACITI Champion", company: "CAPACITI", impact: "Building AI tools while completing IT Support training.", icon: GraduationCap },
+    { year: "2024 - 2025", role: "Customer Service Agent", company: "Shoprite Sixty60", impact: "High satisfaction scores under pressure.", icon: Headphones },
+    { year: "2024 & 2025", role: "Wildland Firefighter", company: "Seasonal", impact: "Emergency response protecting communities.", icon: Flame },
+    { year: "2023", role: "Call Centre Agent", company: "Ver-tex Solutions", impact: "Learnership in professional communication.", icon: Headphones },
+    { year: "2021 - 2022", role: "Educator & Admin", company: "Godidi S.P.S", impact: "Teaching support and administration.", icon: Users },
+    { year: "2018", role: "Class Representative", company: "Walter Sisulu University", impact: "Student advocacy and faculty liaison.", icon: PenTool },
   ];
 
   return (

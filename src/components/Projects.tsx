@@ -8,42 +8,33 @@ const Projects = () => {
     {
       icon: Shirt,
       title: "Beezmark dee Boison",
-      problem: "Limited access to unique, locally-designed streetwear in South Africa.",
-      solution: "Launched an independent clothing brand with bold designs and celebrity collaborations.",
-      result: "Active business since 2018 with growing customer base and SA influencer partnerships.",
+      problem: "Limited unique streetwear in SA market.",
+      solution: "Independent clothing brand with celebrity collaborations.",
+      result: "Active since 2018 with SA influencer partnerships.",
       link: "https://beezmark-dee-boison.netlify.app/"
     },
     {
       icon: FileText,
       title: "CVisionary",
-      problem: "Job seekers struggle to create tailored, professional resumes quickly.",
-      solution: "Built an AI-powered resume builder that generates customized CVs based on job requirements.",
-      result: "Functional tool that produces polished resumes in minutes, not hours.",
+      problem: "Creating tailored resumes is slow.",
+      solution: "AI resume builder for job-specific CVs.",
+      result: "Polished resumes in minutes.",
       link: "https://cvisionary.netlify.app/"
     },
     {
       icon: Sparkles,
       title: "TriGen",
-      problem: "Creating consistent, engaging content across platforms is time-consuming.",
-      solution: "Developed an AI content generator for marketing copy and social media posts.",
-      result: "Automated content creation that maintains brand voice across multiple channels.",
+      problem: "Content creation is time-consuming.",
+      solution: "AI content generator for marketing.",
+      result: "Consistent brand voice across channels.",
       link: "https://trigen.netlify.app/"
     },
   ];
 
   const otherProjects = [
-    {
-      title: "AI Chatbot with Zapier",
-      description: "Automated customer service workflows using Zapier integrations."
-    },
-    {
-      title: "Crop Guard Prototype",
-      description: "Mobile app design for agricultural crop monitoring (Figma)."
-    },
-    {
-      title: "Portfolio Website",
-      description: "This site – built with React, TypeScript, and Tailwind CSS."
-    },
+    { title: "AI Chatbot", description: "Zapier-powered customer service automation." },
+    { title: "Crop Guard", description: "Agricultural monitoring app (Figma)." },
+    { title: "Portfolio", description: "React + TypeScript + Tailwind." },
   ];
 
   return (

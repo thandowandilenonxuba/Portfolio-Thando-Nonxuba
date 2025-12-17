@@ -27,17 +27,11 @@ const About = () => {
           <Card className="mb-12 shadow-professional border-0">
             <CardContent className="p-8">
               <p className="text-lg leading-relaxed text-foreground/90 mb-6">
-                I am a dedicated and adaptable professional with a <strong>National Diploma in Information Technology (majoring in Software Development)</strong>{" "}
-                from Walter Sisulu University (2018-2020) and Matric from Gobe Commercial High School (2015). Currently 
-                upskilling as a <strong>CAPACITI Champion</strong> (started September 17, 2025), where I've completed 
-                the <strong>Artificial Intelligence (AI) Bootcamp</strong> and <strong>Professional Development</strong> courses, 
-                and am currently pursuing an <strong>IT Support</strong> course. I've also created innovative projects including 
-                AI-powered tools and mobile app prototypes.
+                <strong>National Diploma in IT (Software Development)</strong> from Walter Sisulu University. Currently a{" "}
+                <strong>CAPACITI Champion</strong> completing AI Bootcamp and IT Support training.
               </p>
               <p className="text-lg leading-relaxed text-foreground/90">
-                I thrive in dynamic environments and bring strong communication, problem-solving, and teamwork skills to every role. 
-                My diverse background spans IT development, customer service, education, emergency response, and entrepreneurship 
-                (clothing brand owner), demonstrating my versatility and commitment to continuous learning.
+                Background in IT, customer service, emergency response, and entrepreneurship. I adapt fast and communicate clearly.
               </p>
             </CardContent>
           </Card>
