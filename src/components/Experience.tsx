@@ -1,74 +1,50 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Briefcase } from "lucide-react";
+import { Briefcase, GraduationCap, Flame, Headphones, Users, PenTool } from "lucide-react";
 import USBUnderline from "./USBUnderline";
 
 const Experience = () => {
   const experiences = [
     { 
       year: "Sept 2025 - Present", 
-      role: "CAPACITI Champion - IT Skills Development", 
+      role: "CAPACITI Champion", 
       company: "CAPACITI",
-      description: "Upskilling in tech with hands-on projects including Chatbot (Zapier), Crop Guard Prototype (Figma), CVisionary AI Resume Builder, and TriGen Content Generator (Lovable)."
-    },
-    { 
-      year: "Jan - June 2025", 
-      role: "Wildland Firefighter", 
-      company: "Seasonal Contract",
-      description: "Contract expired after seasonal wildfire season."
+      impact: "Building AI-powered tools and prototypes while upskilling in IT support and cloud technologies.",
+      icon: GraduationCap
     },
     { 
       year: "2024 - 2025", 
-      role: "Customer Service Call Centre Agent", 
+      role: "Customer Service Agent", 
       company: "Shoprite Checkers Sixty60",
-      description: "Handled customer inquiries and provided efficient service solutions."
+      impact: "Resolved customer issues efficiently, maintaining high satisfaction scores under pressure.",
+      icon: Headphones
     },
     { 
-      year: "Jan - June 2024", 
+      year: "2024 & 2025", 
       role: "Wildland Firefighter", 
       company: "Seasonal Contract",
-      description: "Contract expired after seasonal wildfire season."
+      impact: "Led emergency response operations protecting communities during peak wildfire seasons.",
+      icon: Flame
     },
     { 
       year: "2023", 
-      role: "Call Centre Agent Learnership", 
+      role: "Call Centre Agent", 
       company: "Ver-tex Solutions",
-      description: "Completed learnership program in customer service and call centre operations."
+      impact: "Completed learnership with focus on professional communication and problem resolution.",
+      icon: Headphones
     },
     { 
-      year: "July - Sept 2022", 
-      role: "Admin Clerk", 
+      year: "2021 - 2022", 
+      role: "Educator & Admin", 
       company: "Godidi S.P.S",
-      description: "Left due to return of original clerk from maternity leave."
-    },
-    { 
-      year: "May - Aug 2022", 
-      role: "Educator Assistant", 
-      company: "Godidi S.P.S",
-      description: "Contract expired."
-    },
-    { 
-      year: "Nov 2021 - May 2022", 
-      role: "Educator Assistant", 
-      company: "Godidi S.P.S",
-      description: "Supported teaching staff and assisted with classroom management."
-    },
-    { 
-      year: "Aug - Oct 2021", 
-      role: "SGB Teacher", 
-      company: "Godidi S.P.S",
-      description: "Taught classes as School Governing Body appointed teacher."
-    },
-    { 
-      year: "May - July 2021", 
-      role: "Cashier & Stock Management", 
-      company: "Nomalinge Store",
-      description: "Left to attend to personal issues."
+      impact: "Supported teaching operations and managed administrative tasks across multiple roles.",
+      icon: Users
     },
     { 
       year: "2018", 
       role: "Class Representative", 
       company: "Walter Sisulu University",
-      description: "Represented student interests and facilitated communication with faculty."
+      impact: "Advocated for student needs and facilitated faculty-student communication.",
+      icon: PenTool
     },
   ];
 
@@ -83,46 +59,32 @@ const Experience = () => {
           </h2>
           <USBUnderline />
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-primary to-accent"></div>
-
-            {/* Experience Items */}
-            <div className="space-y-8">
-              {experiences.map((exp, index) => (
-                <div
-                  key={index}
-                  className={`relative flex items-center ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } gap-8`}
+          <div className="space-y-4">
+            {experiences.map((exp, index) => {
+              const Icon = exp.icon;
+              return (
+                <Card 
+                  key={index} 
+                  className="shadow-sm hover:shadow-md transition-all duration-300 border-0 overflow-hidden"
                 >
-                  {/* Timeline Dot */}
-                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gradient-to-br from-primary to-accent shadow-lg"></div>
-
-                  {/* Spacer for timeline alignment */}
-                  <div className="hidden md:block flex-1"></div>
-
-                  {/* Content Card */}
-                  <Card className="flex-1 shadow-md hover:shadow-professional transition-all duration-300 border-0">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
-                          <Briefcase className="h-6 w-6 text-white" />
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-sm font-semibold text-primary mb-2">{exp.year}</div>
-                          <h3 className="text-xl font-bold text-foreground mb-1">{exp.role}</h3>
-                          <p className="text-muted-foreground mb-2">{exp.company}</p>
-                          {exp.description && (
-                            <p className="text-sm text-foreground/70 mt-2">{exp.description}</p>
-                          )}
-                        </div>
+                  <CardContent className="p-5">
+                    <div className="flex items-start gap-4">
+                      <div className="w-11 h-11 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-5 w-5 text-white" />
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              ))}
-            </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                          <h3 className="text-lg font-bold text-foreground">{exp.role}</h3>
+                          <span className="text-sm font-medium text-primary">{exp.year}</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground mb-2">{exp.company}</p>
+                        <p className="text-foreground/80 leading-relaxed">{exp.impact}</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </div>
