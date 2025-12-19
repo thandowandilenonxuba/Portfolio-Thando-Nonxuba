@@ -41,7 +41,7 @@ const Projects = () => {
 
   const otherProjects = [
     { title: "Literal", description: "AI-powered conversational chatbot.", link: "https://literal-308fae.zapier.app/chat" },
-    { title: "Crop Guard", description: "Agricultural monitoring app (Figma).", link: "#" },
+    { title: "Crop Guard", description: "Agricultural monitoring app (Figma).", link: "https://www.figma.com/proto/zg1u4XQA8q397oc5qOHxCa/CropGuard-Prototype-by-L.I.T?node-id=50-123&t=d9HDzn9e09eEPlq0-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=108%3A561" },
     { title: "Portfolio", description: "React + TypeScript + Tailwind.", link: "#" },
   ];
 
