@@ -32,9 +32,9 @@ const Projects = () => {
   ];
 
   const otherProjects = [
-    { title: "AI Chatbot", description: "Zapier-powered customer service automation." },
-    { title: "Crop Guard", description: "Agricultural monitoring app (Figma)." },
-    { title: "Portfolio", description: "React + TypeScript + Tailwind." },
+    { title: "AI Chatbot", description: "Zapier-powered customer service automation.", link: "#" },
+    { title: "Crop Guard", description: "Agricultural monitoring app (Figma).", link: "#" },
+    { title: "Portfolio", description: "React + TypeScript + Tailwind.", link: "#" },
   ];
 
   return (
@@ -99,10 +99,19 @@ const Projects = () => {
             <h3 className="text-lg font-semibold text-foreground mb-4">Other Work</h3>
             <div className="grid sm:grid-cols-3 gap-4">
               {otherProjects.map((project, index) => (
-                <div key={index} className="bg-background rounded-lg p-4">
-                  <p className="font-medium text-foreground mb-1">{project.title}</p>
+                <a 
+                  key={index} 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-background rounded-lg p-4 hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
+                >
+                  <p className="font-medium text-foreground mb-1 group-hover:text-primary transition-colors">{project.title}</p>
                   <p className="text-sm text-muted-foreground">{project.description}</p>
-                </div>
+                  <span className="text-xs text-primary mt-2 inline-flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                    View <ExternalLink className="h-3 w-3" />
+                  </span>
+                </a>
               ))}
             </div>
           </div>
