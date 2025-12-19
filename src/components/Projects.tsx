@@ -29,10 +29,18 @@ const Projects = () => {
       result: "Consistent brand voice across channels.",
       link: "https://trigen.netlify.app/"
     },
+    {
+      icon: Sparkles,
+      title: "Roots2Rise",
+      problem: "Limited access to empowerment resources.",
+      solution: "Platform empowering young African minds.",
+      result: "Connecting youth with growth opportunities.",
+      link: "https://litfinal.netlify.app/auth"
+    },
   ];
 
   const otherProjects = [
-    { title: "AI Chatbot", description: "Zapier-powered customer service automation.", link: "#" },
+    { title: "Literal", description: "AI-powered conversational chatbot.", link: "https://literal-308fae.zapier.app/chat" },
     { title: "Crop Guard", description: "Agricultural monitoring app (Figma).", link: "#" },
     { title: "Portfolio", description: "React + TypeScript + Tailwind.", link: "#" },
   ];
