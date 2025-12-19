@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { motion, Variants } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,86 +11,103 @@ import CVSection from "@/components/CVSection";
 import Footer from "@/components/Footer";
 import Chatbot from "@/components/Chatbot";
 
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
+  }
+};
+
+const fadeInLeft: Variants = {
+  hidden: { opacity: 0, x: -40 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
+  }
+};
+
+const fadeInRight: Variants = {
+  hidden: { opacity: 0, x: 40 },
+  visible: { 
+    opacity: 1, 
+    x: 0,
+    transition: { duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }
+  }
+};
+
+const scaleIn: Variants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  visible: { 
+    opacity: 1, 
+    scale: 1,
+    transition: { duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }
+  }
+};
+
 const Index = () => {
-  const sectionsRef = useRef<(HTMLElement | null)[]>([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-in");
-          }
-        });
-      },
-      {
-        threshold: 0.1,
-        rootMargin: "0px 0px -100px 0px",
-      }
-    );
-
-    sectionsRef.current.forEach((section) => {
-      if (section) observer.observe(section);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  const animations = [
-    "animate-bounce-in",
-    "animate-fall-in",
-    "animate-slide-bounce-left",
-    "animate-slide-bounce-right",
-    "animate-elastic-in",
-    "animate-bounce-in",
-  ];
+  const animations = [fadeInUp, fadeInLeft, fadeInRight, scaleIn, fadeInUp, fadeInRight];
 
   return (
     <main className="min-h-screen">
       <Navigation />
       <Hero />
-      <section
+      <motion.section
         id="about"
-        ref={(el) => (sectionsRef.current[0] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[0]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[0]}
       >
         <About />
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="experience"
-        ref={(el) => (sectionsRef.current[1] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[1]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[1]}
       >
         <Experience />
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="projects"
-        ref={(el) => (sectionsRef.current[2] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[2]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[2]}
       >
         <Projects />
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="skills"
-        ref={(el) => (sectionsRef.current[3] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[3]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[3]}
       >
         <Skills />
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="certificates"
-        ref={(el) => (sectionsRef.current[4] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[4]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[4]}
       >
         <Certificates />
-      </section>
-      <section
+      </motion.section>
+      <motion.section
         id="contact"
-        ref={(el) => (sectionsRef.current[5] = el)}
-        className={`opacity-0 transition-opacity duration-300 ${animations[5]}`}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, margin: "-100px" }}
+        variants={animations[5]}
       >
         <Contact />
-      </section>
+      </motion.section>
       <CVSection />
       <Footer />
       <Chatbot />
