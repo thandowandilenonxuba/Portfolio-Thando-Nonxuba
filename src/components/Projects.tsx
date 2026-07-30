@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code, Shirt, Sparkles, FileText, ExternalLink } from "lucide-react";
+import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink } from "lucide-react";
 import USBUnderline from "./USBUnderline";
 
 const Projects = () => {
