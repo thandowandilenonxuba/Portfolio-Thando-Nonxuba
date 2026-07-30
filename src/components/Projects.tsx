@@ -99,7 +99,19 @@ const Projects = () => {
                         <p className="font-semibold text-primary mb-1">Result</p>
                         <p className="text-foreground/80">{project.result}</p>
                       </div>
-                      {project.link && (
+                      {project.title === "Crop Guard" ? (
+                        <CropGuardCaseStudy
+                          trigger={
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="w-full mt-3"
+                            >
+                              View Case Study <BookOpen className="ml-2 h-4 w-4" />
+                            </Button>
+                          }
+                        />
+                      ) : (
                         <Button
                           asChild
                           variant="outline"
