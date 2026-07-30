@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink } from "lucide-react";
+import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink, BookOpen } from "lucide-react";
 import USBUnderline from "./USBUnderline";
+import CropGuardCaseStudy from "./CropGuardCaseStudy";
 
 const Projects = () => {
   const featuredProjects = [
