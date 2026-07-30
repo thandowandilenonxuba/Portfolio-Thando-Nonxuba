@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink } from "lucide-react";
+import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink, BookOpen } from "lucide-react";
 import USBUnderline from "./USBUnderline";
+import CropGuardCaseStudy from "./CropGuardCaseStudy";
 
 const Projects = () => {
   const featuredProjects = [
@@ -98,7 +99,19 @@ const Projects = () => {
                         <p className="font-semibold text-primary mb-1">Result</p>
                         <p className="text-foreground/80">{project.result}</p>
                       </div>
-                      {project.link && (
+                      {project.title === "Crop Guard" ? (
+                        <CropGuardCaseStudy
+                          trigger={
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="w-full mt-3"
+                            >
+                              View Case Study <BookOpen className="ml-2 h-4 w-4" />
+                            </Button>
+                          }
+                        />
+                      ) : (
                         <Button
                           asChild
                           variant="outline"
