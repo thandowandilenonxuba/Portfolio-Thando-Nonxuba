@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Code, Shirt, Sparkles, FileText, ExternalLink } from "lucide-react";
+import { Code, Shirt, Sparkles, FileText, Sprout, ExternalLink } from "lucide-react";
 import USBUnderline from "./USBUnderline";
 
 const Projects = () => {
@@ -38,11 +38,18 @@ const Projects = () => {
       result: "Connecting youth with growth opportunities.",
       link: "https://litfinal.netlify.app/auth"
     },
+    {
+      icon: Sprout,
+      title: "Crop Guard",
+      problem: "Agricultural challenges like pests, soil quality, irrigation issues, and weeds reduce productivity and threaten food security.",
+      solution: "AI-powered mobile/web prototype using computer vision, predictive analytics, and IoT data for real-time farm insights.",
+      result: "Helps farmers make informed decisions, reduce resource waste, improve crop health, and drive sustainable farming practices.",
+      link: "https://www.figma.com/proto/mZHNBBvr6rnES2v2QdohIN/Crop-Guard?node-id=8-16&t=GZI2uFrOtNb0RjjC-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=108%3A561&show-proto-sidebar=1"
+    },
   ];
 
   const otherProjects = [
     { title: "Literal", description: "AI-powered conversational chatbot.", link: "https://literal-308fae.zapier.app/chat" },
-    { title: "Crop Guard", description: "Agricultural monitoring app (Figma).", link: "https://www.figma.com/proto/zg1u4XQA8q397oc5qOHxCa/CropGuard-Prototype-by-L.I.T?node-id=50-123&t=d9HDzn9e09eEPlq0-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=108%3A561" },
     { title: "Portfolio", description: "React + TypeScript + Tailwind.", link: "/" },
   ];
 
